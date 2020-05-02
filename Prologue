@@ -15,8 +15,8 @@ http://brainwagon.org
 
 // Update these with values suitable for your network.
 
-const char* ssid = "true_home2G_d34";
-const char* password = "dbovtwifu";
+const char* ssid = "your_wifi_name";
+const char* password = "your_wifi_password";
 const char* mqtt_server = "broker.mqttdashboard.com";
 
 WiFiClient espClient;
