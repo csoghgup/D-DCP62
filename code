@@ -212,6 +212,7 @@ void loop() {
   if (now - lastMsg > 2000) {
     lastMsg = now;
     ++value;
+  char val_char[0];
   client.publish("leocp62", val_char);
   }
 }
