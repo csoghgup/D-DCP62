@@ -212,14 +212,6 @@ void loop() {
   if (now - lastMsg > 2000) {
     lastMsg = now;
     ++value;
-    int val = digitalRead(5);
-  String val_str = String(val);
-  char val_char[10];
-  val_str.toCharArray(val_char, 10);
   client.publish("leocp62", val_char);
   }
-}
-
-void Transmit(){//Make sure these are all CAPS or will not TX
-  delay(3000) ;
 }
